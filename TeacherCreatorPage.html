@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="favicon.ico">
+	<title> Teacher Creator Page </title>
+	<link rel="stylesheet" href="Teacherstyle.css">
+	<script src="teacher.js"></script>
+</head>
+
+<body onload="getExistingAnnouncements();">
+	<div class="bg-gradient">
+
+
+		<h1 align="center"> <span style="vertical-align: -180px;"> <b> Choose The... </b> </span> </h1>
+
+
+		<!--Dropdown Menus-->
+
+		<div class="container mt-50">
+			<p> <b> Grade </b> </p>
+			<div class="select-box">
+				<select id="htmlTeacherGrade">
+					<option> --Select Grade-- </option>
+					<option value="9"> 9</option>
+					<option value="10"> 10</option>
+					<option value="11"> 11</option>
+					<option value="12"> 12</option>
+					<option value="All"> All</option>
+
+				</select>
+
+			</div>
+
+			<p> <b> Gender </b> </p>
+			<div class="select-box">
+				<select id="htmlTeacherGender">
+					<option disabled> --Select Gender-- </option>
+					<option value="Male"> Male</option>
+					<option value="Female"> Female</option>
+					<option value="All"> All</option>
+				</select>
+
+
+			</div>
+			<p> <b> Club </b> </p>
+			<div class="select-box">
+				<select id="htmlTeacherClub">
+					<option> ---Select Club--- </option>
+					<option value="Deca">  Deca</option>
+					<option value="ModelUN"> ModelUN</option>
+					<option value="HOSA"> HOSA</option>
+					<option value="Badminton"> Badminton</option>
+					<option value="Basketball"> Basketball</option>
+					<option value="Cricket"> Cricket</option>
+					<option value="Robotics"> Robotics</option>
+					<option value="HSA"> HSA</option>
+					<option value="COY"> COY</option>
+					<option value="Lacrosse"> Lacrosse</option>
+					<option value="Cross-Country"> Cross-Country</option>
+					<option value="All"> All</option>
+
+				</select>
+			</div>
+
+			<!-- ANNOUNCEMENT TEXT BOX-->
+			<div>
+				<h2><b> Type Announcement Here: </b> </h2>
+				<textarea id="htmlTeacherAnnouncement" rows="6" cols="70"> </textarea>
+			</div>
+			<div>
+				<a href="Teachersuccess.html"><button onclick="getTeacherData();" style="vertical-align:-180px" class="button">
+					 Post</button> </a>
+				<a href="School Announcement Program.html"> <button onclick="goHome();" style="vertical-align:-180px"
+						class="button"> Home</button> </a>
+			</div>
+		</div>
+</body>
+
+</html>
